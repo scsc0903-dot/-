@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecosystem Balance Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+  <style>
+      @keyframes float {
+        0% { transform: translatey(0px) rotate(-1deg); }
+        50% { transform: translatey(-8px) rotate(1deg); }
+        100% { transform: translatey(0px) rotate(-1deg); }
+      }
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+      .graph-bar {
+        transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+    </style>
+</head>
+  <body class="bg-sky-50">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
